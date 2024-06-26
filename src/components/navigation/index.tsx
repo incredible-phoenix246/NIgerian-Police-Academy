@@ -29,7 +29,7 @@ const Navbar = () => {
       className={cn(
         " max-[500px]:py-2 px-4 sm:px-8 xl:px-16 2xl:px-24 flex w-full justify-between items-center transition-colors duration-500 bg-back",
         scrollHeight > 200
-          ? "fixed backdrop-blur-xl top-0 left-0  z-50 -translate-y-28 opacity-0 animate-slideDown bg-white-main/50 py-2 border-b border-gray-200 shadow-md"
+          ? "fixed backdrop-blur-xl top-0 left-0  z-[150] -translate-y-28 opacity-0 animate-slideDown bg-white-main/50 py-2 border-b border-gray-200 shadow-md"
           : "sm:py-6 py-4",
         {
           "bg-back/60 ": scrollHeight > 800 && scrollHeight < 4300,
@@ -143,8 +143,10 @@ const MobileNaBar = () => {
               {link.label}
             </Link>
           ))}
-          <div className="lg:hidden flex flex-col gap-y-5 [&>button]:border-blue-main [&>button]:border [&>button]:px-4 [&>button]:py-2 [&>button]:rounded-md [&>button]:font-medium [&>button]:text-blue-main">
-            <button type="button">Login</button>
+          <div className="lg:hidden flex flex-col gap-y-5 w-full [&>button]:w-full [&>button]:border-blue-main [&>button]:border [&>button]:px-4 [&>button]:py-2 [&>button]:rounded-md [&>button]:font-medium [&>button]:text-blue-main">
+            <button type="button" className="w-full">
+              Login
+            </button>
           </div>
         </div>
       </nav>
@@ -152,4 +154,61 @@ const MobileNaBar = () => {
   );
 };
 
-export { Navbar };
+const Footer = () => {
+  return (
+    <footer className="rounded-lg shadow  m-4 bg-back">
+      <div className="w-full container p-4 md:py-8">
+        <div className="sm:flex sm:items-center sm:justify-between">
+          <Link
+            href="/"
+            className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <Image
+              className="h-8 object-cover"
+              src="/logo2.webp"
+              alt=""
+              width={715}
+              height={505}
+            />
+            {/*  */}
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              Nigeria Police Academy
+            </span>
+          </Link>
+          <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+            <li>
+              <Link href="#" className="hover:underline me-4 md:me-6">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:underline me-4 md:me-6">
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:underline me-4 md:me-6">
+                Licensing
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:underline">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <hr className="my-6 border-gray-200 sm:mx-auto 0 lg:my-8" />
+        <span className="block text-sm text-gray-500 sm:text-center">
+          &copy; {new Date().getFullYear()}{" "}
+          <Link href="/" className="hover:underline">
+            NPA ICT directorate™
+          </Link>
+          . All Rights Reserved.
+        </span>
+      </div>
+    </footer>
+  );
+};
+
+export { Navbar, Footer };

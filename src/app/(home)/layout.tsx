@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar } from "@/components/navigation";
+import { Navbar, Footer } from "@/components/navigation";
 import { Suspense } from "react";
 import { SkeletonNavbar } from "@/components/skelton";
 
@@ -13,7 +13,8 @@ export default function AdminLayout({
       <Suspense fallback={<SkeletonNavbar />}>
         <Navbar />
       </Suspense>
-      {children}
+      <main className="bg-back">{children}</main>
+      <Footer />
     </>
   );
 }

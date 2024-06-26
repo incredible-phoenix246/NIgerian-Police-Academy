@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <StateContextProvider>
         <body
-          className={`${inter.variable} ${jaka.variable} ${workSans.className}`}
+          className={`${inter.variable} ${jaka.variable} ${workSans.className} bg-back`}
         >
           {children}
         </body>
