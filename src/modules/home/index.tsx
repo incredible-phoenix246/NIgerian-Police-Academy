@@ -18,32 +18,34 @@ const HeroSection = () => {
   return (
     <section className="flex justify-center items-center container">
       <div className="flex flex-col md:flex-row px-4">
-        <motion.article
-          className="md:w-2/5 pt-10 md:pt-20 text-center md:text-left"
+        <motion.div
+          className="md:w-2/5 pt-10 md:pt-20 text-center md:text-left max-md:px-4 w-full"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-4xl capitalize font-jaka font-bold text-gray-800 max-md:max-w-full max-md:text-2xl max-md:text-center">
-            A highly Reformed, Mobile, Innovative, Efficient and Civil Police.
-          </h1>
-          <p className="mt-6 text-xl tracking-normal text-gray-800 max-md:max-w-full max-md:text-center">
-            A model security training institution, internationally respected for
-            the quality and efficiency of its training and the excellence of its
-            academic standards.
-          </p>
-          <div className="flex gap-4 mt-10 text-2xl tracking-wide leading-7 max-md:flex-wrap max-md:max-w-full">
-            <Button className=" bg-blue-main hover:bg-blue-main/80 w-[152px] h-[56px] rounded-lg text-base">
-              Start learning
-            </Button>
-            <Button
-              variant="outline"
-              className="w-[152px] h-[56px] rounded-lg  text-base"
-            >
-              About Us
-            </Button>
+          <div className="w-full p-4">
+            <h1 className="md:text-4xl text-xl capitalize font-jaka font-bold text-gray-800 max-md:max-w-full max-md:text-center">
+              A highly Reformed, Mobile, Innovative, Efficient and Civil Police.
+            </h1>
+            <p className="mt-6 text-base md:text-xl tracking-normal text-gray-800 max-md:max-w-full max-md:text-center">
+              A model security training institution, internationally respected
+              for the quality and efficiency of its training and the excellence
+              of its academic standards.
+            </p>
+            <div className="flex gap-4 mt-10 w-full items-center justify-between max-md:px-4">
+              <Button className=" bg-blue-main hover:bg-blue-main/80 w-[152px] h-[56px] rounded-lg text-base">
+                Start learning
+              </Button>
+              <Button
+                variant="outline"
+                className="w-[152px] h-[56px] rounded-lg  text-base"
+              >
+                About Us
+              </Button>
+            </div>
           </div>
-        </motion.article>
+        </motion.div>
         <div className="relative flex-1 z-[51]">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -218,7 +220,7 @@ const AboutSection = () => {
                 <div className="h-2 w-[40px] bg-blue-main" />
                 <h1>About us</h1>
               </header>
-              <h2 className="mt-2 text-4xl font-semibold leading-10 max-md:max-w-full">
+              <h2 className="mt-2 text-xl md:text-4xl font-semibold leading-10 max-md:max-w-full">
                 The Nigerian Police Academy
               </h2>
               <p className="mt-5 tracking-wide max-md:max-w-full">

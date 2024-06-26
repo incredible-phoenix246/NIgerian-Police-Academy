@@ -43,7 +43,7 @@ const Navbar = () => {
           scrollHeight > 200 ? "w-[120px] " : "w-fit"
         )}
       >
-        <Image src="/logo.png" alt="logo" width={42} height={38} />
+        <Image src="/logo2.webp" alt="logo" width={42} height={38} />
       </Link>
       <div className="hidden lg:flex items-center gap-x-5 lg:gap-x-7 2xl:gap-x-10 w-full justify-center max-w-[50%] 2xl:max-w-[40%]">
         {NAV_LINKS.map((link) => (
@@ -171,7 +171,7 @@ const Footer = () => {
               height={505}
             />
             {/*  */}
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="self-center text-base md:text-2xl font-semibold whitespace-nowrap dark:text-white">
               Nigeria Police Academy
             </span>
           </Link>
