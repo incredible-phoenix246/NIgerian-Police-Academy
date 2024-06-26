@@ -331,7 +331,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
       <h1 className="block mt-2 text-xl font-semibold text-zinc-800">
         {shrinkString({ str: title, len: 40 })}
       </h1>
-      <p className="text-sm">{shrinkString({ str: description, len: 60 })}</p>
+      <p className="text-sm">{shrinkString({ str: description, len: 80 })}</p>
       <div className="flex justify-center items-center px-16 mt-6 text-xl max-md:px-5">
         <div className="flex gap-4">
           <span>Read more</span>
