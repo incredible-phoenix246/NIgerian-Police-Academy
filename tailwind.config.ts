@@ -1,12 +1,12 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -20,7 +20,7 @@ const config = {
     extend: {
       colors: {
         "blue-main": "#0540F2",
-        back: "#F9FCFF"
+        back: "#F9FCFF",
       },
       keyframes: {
         "accordion-down": {
@@ -53,6 +53,11 @@ const config = {
             opacity: "0",
           },
         },
+        "load-spin": {
+          "100%": {
+            transform: "rotate(360deg)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -60,6 +65,7 @@ const config = {
         slideUp: "slideUp 1s 0.2s ease forwards",
         slideDown: "slideDown 1s 0.2s ease forwards",
         slideNavUp: "slideDown 1s 0.2s ease forwards",
+        "load-spin": "load-spin 1.2s linear infinite",
       },
       fontFamily: {
         worksans: [`var(--font-work-sans)`, "sans-serif"],
@@ -69,6 +75,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;

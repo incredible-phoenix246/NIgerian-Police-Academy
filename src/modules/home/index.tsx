@@ -1,18 +1,13 @@
 "use client";
 
 import React from "react";
-import { cn, shrinkString } from "@/utils";
+import {  shrinkString } from "@/utils";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, Calendar, ProfileCircle, type Icon } from "iconsax-react";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
-type StaffsProps = {
-  name: string;
-  specialty: string;
-  imageUrl: string;
-};
+
 
 const HeroSection = () => {
   return (
@@ -114,45 +109,7 @@ const HeroSection = () => {
   );
 };
 
-const staffs = [
-  {
-    name: "AIG Sadiq I. Abubakar",
-    specialty: "Commandant",
-    imageUrl: "/staff1.png",
-  },
-  {
-    name: "AIG Sadiq I. Abubakar",
-    specialty: "Provost",
-    imageUrl: "/staff2.png",
-  },
-  {
-    name: "AIG Sadiq I. Abubakar",
-    specialty: "Registar",
-    imageUrl: "/staff1.png",
-  },
-  {
-    name: "AIG Sadiq I. Abubakar",
-    specialty: "Bussar",
-    imageUrl: "/staff2.png",
-  },
-];
 
-const Staffs: React.FC<StaffsProps> = ({ name, specialty, imageUrl }) => (
-  <div className="flex gap-2 mt-4 w-full">
-    <Image
-      loading="lazy"
-      src={imageUrl}
-      alt={`${name}'s profile`}
-      width={42}
-      height={42}
-      className="shrink-0 rounded-full aspect-square w-[42px]"
-    />
-    <div className="flex flex-col">
-      <div className="text-base font-medium text-gray-800">{name}</div>
-      <div className="text-sm font-light text-neutral-600">{specialty}</div>
-    </div>
-  </div>
-);
 
 function Cards({
   image,

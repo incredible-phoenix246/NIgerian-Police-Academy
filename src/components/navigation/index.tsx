@@ -1,6 +1,6 @@
 "use client";
 
-import React, { Suspense, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { cn } from "@/utils";
 
 import { useStateCtx } from "@/context/StateCtx";
@@ -12,7 +12,7 @@ import { useSearchParams } from "next/navigation";
 import { CloseSquare, HambergerMenu } from "iconsax-react";
 
 const Navbar = () => {
-  const { showMobileMenu, setShowMobileMenu } = useStateCtx();
+  const {  setShowMobileMenu } = useStateCtx();
   const scrollHeight = useWindowHeight();
   const searchParams = useSearchParams().get("path");
 
@@ -161,15 +161,9 @@ const Footer = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <Link
             href="/"
-            className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+            className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse max-sm:w-[120px] max-[450px]:w-[100px] w-fit"
           >
-            <Image
-              className="h-8 object-cover"
-              src="/logo2.webp"
-              alt=""
-              width={715}
-              height={505}
-            />
+            <Image src="/logo2.webp" alt="logo" width={42} height={38} />
             {/*  */}
             <span className="self-center text-base md:text-2xl font-semibold whitespace-nowrap dark:text-white">
               Nigeria Police Academy

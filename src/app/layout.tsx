@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "../styles/globals.scss";
 import { inter, jaka, workSans } from "@/fonts";
 import StateContextProvider from "@/context/StateCtx";
+import React from "react";
 
 export const metadata: Metadata = {
   title: "Nigeria Police Academy",
