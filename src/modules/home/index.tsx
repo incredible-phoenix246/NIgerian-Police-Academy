@@ -1,13 +1,19 @@
 "use client";
 
 import React from "react";
-import {  shrinkString } from "@/utils";
+
+import { shrinkString } from "@/utils";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Calendar, ProfileCircle, type Icon } from "iconsax-react";
+import { ArrowRight, Calendar, type Icon, ProfileCircle } from "iconsax-react";
 import { Button } from "@/components/ui/button";
-
-
+import Link from "next/link";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@ui/accordion";
 
 const HeroSection = () => {
   return (
@@ -109,8 +115,6 @@ const HeroSection = () => {
   );
 };
 
-
-
 function Cards({
   image,
   title,
@@ -187,8 +191,11 @@ const AboutSection = () => {
                 Police officers to assess the training needs of the Nigerian
                 Police.
               </p>
-              <Button className=" bg-blue-main mt-5 hover:bg-blue-main/80 w-[152px] h-[56px] rounded-lg text-base">
-                Learn More
+              <Button
+                asChild
+                className=" bg-blue-main mt-5 hover:bg-blue-main/80 w-[152px] h-[56px] rounded-lg text-base"
+              >
+                <Link href="/about?path=about">Learn More</Link>
               </Button>
             </div>
           </motion.div>
@@ -204,7 +211,7 @@ const NewsSection = () => {
       imageSrc: "wireless.jpg",
       author: "Ict Directorate",
       date: "Feb 23, 2024",
-      title: "installation of wireless newtwork.",
+      title: "installation of wireless network.",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam commodi doloremque error, autem odit recusandae voluptatibus accusantium sit sint fugiat ducimus, non omnis corrupti iste dolor id quam, aperiam consectetur quo maiores quis perspiciatis voluptate et quaerat. Molestiae, recusandae! Atque culpa quidem repellat voluptatum illo corporis ad a, suscipit consequatur aperiam deserunt perspiciatis inventore iste sed. In perferendis nemo officiis alias. Quam distinctio laboriosam nobis cupiditate ullam doloremque, voluptatem alias placeat mollitia voluptates voluptas et iste sed sapiente ab ipsa dolorem? At assumenda sed repellendus numquam sint quo pariatur, enim non qui sit dignissimos temporibus consectetur soluta, fugit distinctio hic magni laborum! Atque et totam natus iste deleniti eligendi ab sed accusamus modi placeat distinctio reiciendis, beatae eum, repellendus eveniet harum, nam similique perferendis labore minima porro voluptatum! Ratione asperiores pariatur praesentium incidunt facilis quod fugit. Recusandae suscipit assumenda eligendi. Nam vero maiores a ipsa, voluptate nostrum modi magni cupiditate!",
     },
@@ -220,7 +227,7 @@ const NewsSection = () => {
       imageSrc: "exam.jpeg",
       author: "Ict directorates",
       date: "Feb 23, 2024",
-      title: "Launch Of the deparment of cybersecurity",
+      title: "Launch Of the department of cybersecurity",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam commodi doloremque error, autem odit recusandae voluptatibus accusantium sit sint fugiat ducimus, non omnis corrupti iste dolor id quam, aperiam consectetur quo maiores quis perspiciatis voluptate et quaerat. Molestiae, recusandae! Atque culpa quidem repellat voluptatum illo corporis ad a, suscipit consequatur aperiam deserunt perspiciatis inventore iste sed. In perferendis nemo officiis alias. Quam distinctio laboriosam nobis cupiditate ullam doloremque, voluptatem alias placeat mollitia voluptates voluptas et iste sed sapiente ab ipsa dolorem? At assumenda sed repellendus numquam sint quo pariatur, enim non qui sit dignissimos temporibus consectetur soluta, fugit distinctio hic magni laborum! Atque et totam natus iste deleniti eligendi ab sed accusamus modi placeat distinctio reiciendis, beatae eum, repellendus eveniet harum, nam similique perferendis labore minima porro voluptatum! Ratione asperiores pariatur praesentium incidunt facilis quod fugit. Recusandae suscipit assumenda eligendi. Nam vero maiores a ipsa, voluptate nostrum modi magni cupiditate!",
     },
@@ -301,4 +308,118 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
   </article>
 );
 
-export { HeroSection, AboutSection, NewsSection };
+const faq = [
+  {
+    id: 1,
+    question: "What programs and degrees does POLAC offer?",
+    answer:
+      "POLAC offers a variety of programs including undergraduate degrees in Criminology, Law Enforcement Administration, Forensic Science, and postgraduate degrees in Police Leadership and Management. Additionally, it provides specialized training courses for various ranks and specialties within law enforcement.",
+  },
+  {
+    id: 2,
+    question:
+      "How does POLAC support veterans and active-duty service members?",
+    answer:
+      "POLAC supports veterans and active-duty service members by offering credit for military training, facilitating access to the GI Bill®, providing counseling services, and offering flexible scheduling options to accommodate their military service commitments.",
+  },
+  {
+    id: 3,
+    question: "What are the admission requirements for POLAC?",
+    answer:
+      "Admission requirements vary by program, but typically include meeting academic qualifications, passing physical fitness tests, undergoing background checks, and in some cases, passing specific entrance exams related to law enforcement.",
+  },
+  {
+    id: 4,
+    question:
+      "Are there opportunities for ROTC or military officer training programs at POLAC?",
+    answer:
+      "POLAC offers programs equivalent to ROTC that provide officer training for law enforcement. These programs integrate academic coursework with practical training, preparing students for leadership roles within law enforcement agencies.",
+  },
+  {
+    id: 5,
+    question:
+      "How does POLAC accommodate students who are currently serving in law enforcement?",
+    answer:
+      "POLAC offers flexible scheduling options, online course availability, and specialized training modules that cater to the needs of working professionals in law enforcement. These accommodations allow students to balance their academic pursuits with their professional responsibilities.",
+  },
+  {
+    id: 6,
+    question: "What career opportunities are available to graduates of POLAC?",
+    answer:
+      "Graduates of POLAC pursue careers in various sectors of law enforcement including local, state, and federal agencies, as well as private security firms, forensic laboratories, and international law enforcement organizations.",
+  },
+  {
+    id: 7,
+    question: "What facilities and resources does POLAC offer?",
+    answer:
+      "POLAC provides state-of-the-art facilities including classrooms equipped with the latest technology, forensic science laboratories, shooting ranges, physical fitness centers, and a comprehensive law enforcement library. Additionally, on-campus housing options are available for students.",
+  },
+  {
+    id: 8,
+    question:
+      "How does POLAC foster leadership development and character building?",
+    answer:
+      "POLAC emphasizes leadership development through specialized courses, practical training exercises, and mentorship programs conducted by experienced law enforcement professionals. Character building is integral to the curriculum, promoting integrity, discipline, and ethical decision-making.",
+  },
+  {
+    id: 9,
+    question:
+      "What support services are available for international students at POLAC?",
+    answer:
+      "International students at POLAC receive support services such as language assistance, cultural orientation programs, visa guidance, and academic advising tailored to their specific needs. These services ensure a smooth transition and integration into the academic and social life at POLAC.",
+  },
+  {
+    id: 10,
+    question:
+      "How does POLAC engage with the community and industry partnerships?",
+    answer:
+      "POLAC collaborates with law enforcement agencies, government bodies, community organizations, and industry partners to enhance training programs, research initiatives, and community outreach efforts. These partnerships provide students with practical experiences and networking opportunities.",
+  },
+  {
+    id: 11,
+    question: "What financial aid options are available for students at POLAC?",
+    answer:
+      "POLAC offers various financial aid options including scholarships, grants, tuition assistance programs, and opportunities for part-time employment within the academy. These resources help students manage the cost of education and pursue their career goals in law enforcement.",
+  },
+  {
+    id: 12,
+    question:
+      "Can civilian students attend POLAC, and what opportunities are available to them?",
+    answer:
+      "Yes, civilian students can attend POLAC. They have opportunities to enroll in undergraduate and postgraduate programs in law enforcement, participate in specialized training courses, and engage in research projects related to criminal justice and public safety.",
+  },
+];
+
+const FaqSection = () => {
+  return (
+    <section className="flex flex-col items-center container">
+      <div className="flex flex-col items-center p-20  max-md:px-5">
+        <header className="flex gap-5 justify-between items-center text-2xl tracking-wide leading-7 text-gray-800 whitespace-nowrap">
+          <div className="h-2 w-[40px] bg-blue-main" />
+          <h1>FAQ</h1>
+        </header>
+        <h2 className="mt-4 text-4xl font-semibold leading-10 text-center text-gray-800">
+          Frequently Asked Questions
+        </h2>
+      </div>
+      <Accordion type="single" collapsible className="w-full space-y-5 mt-2">
+        {faq.map((faq) => (
+          <AccordionItem value={faq.question} key={faq.id}>
+            {" "}
+            <AccordionTrigger className="hover:no-underline">
+              <div className="flex items-start justify-center gap-3">
+                <div className="shrink-0 my-auto w-2 h-2 bg-blue-main rounded-full" />
+                {faq.question}
+              </div>
+            </AccordionTrigger>
+            <AccordionContent className="text-sm font-worksans">
+              {faq.answer}
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
+    </section>
+  );
+};
+
+export { HeroSection, AboutSection, NewsSection, FaqSection };

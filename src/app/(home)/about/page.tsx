@@ -1,10 +1,11 @@
 import React from "react";
-import { About } from "@/modules/about";
+import { About, Aboutmain } from "@/modules/about";
 
 const AboutPage = () => {
   return (
     <>
       <About />
+      <Aboutmain />
     </>
   );
 };
