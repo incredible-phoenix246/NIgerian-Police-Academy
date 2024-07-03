@@ -1,20 +1,16 @@
-import React from "react";
-import { Navbar, Footer } from "@/components/navigation";
-import { Suspense } from "react";
-import { SkeletonNavbar } from "@/components/skelton";
+import { SideNavigation } from "@/components/navigation/sidebar";
+import { Navbar } from "@/components/navigation";
 
-export default function AdminLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function ({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <Suspense fallback={<SkeletonNavbar />}>
-        <Navbar />
-      </Suspense>
-      <main className="bg-back">{children}</main>
-      <Footer />
+      <SideNavigation />
+      <Navbar />
+      <section className="w-full relative  md:pl-[96px] min-[1140px]:pl-[270px] ">
+        <div className="flex w-full flex-col h-full relative max-container pt-12 md:pt-0 dark:bg-gray-900">
+          {children}
+        </div>
+      </section>
     </>
   );
 }
