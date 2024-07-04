@@ -12,7 +12,7 @@ const Typewriter = dynamic(() => import("typewriter-effect"), {
 });
 const About = () => {
   return (
-    <section className="relative h-[500px] sm:h-[720px] w-full">
+    <section className="relative h-[500px] w-full">
       <div className="w-full h-full max-h-[720px] hidden sm:block absolute top-0 left-0 bg-blue-main">
         <Image
           src="/back.jpg"
@@ -85,7 +85,7 @@ const Aboutmain = () => {
       <div className="flex flex-col min-[1100px]:flex-row  items-center justify-between gap-x-2">
         <div className="w-full md:w-1/2 lg:w-1/2">
           <Image
-            src="/commandant_4.jpg"
+            src="/commandant_3.jpg"
             width={323}
             height={438}
             alt="Illustration Image"
