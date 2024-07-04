@@ -60,7 +60,7 @@ const Herosection = () => {
           <h2 className="font-medium text-2xl md:font-bold md:text-4xl capitalize text-center font-jaka">
             Center fo Police Studies and Policing
           </h2>
-          <p className="text-center text-lg capitalize font-worksans">
+          <p className="text-center text-lg font-worksans">
             providing opportunities to acquiring both basic and advanced
             knowledge about Police and policing aspects at the right time and
             location, stands as a giant approach to security policies perfection
@@ -106,13 +106,13 @@ const AboutSection = () => {
             <h1>About us</h1>
           </header>
           <h2 className="mt-2 text-xl md:text-4xl font-semibold leading-10 max-md:max-w-full">
-            The Nigerian Police Academy
+            The Nigeria Police Academy
           </h2>
           <p className="mt-5 tracking-wide max-md:max-w-full">
             The origin of the Nigeria Police Academy dates back to the early 80s
             when the Government of Nigeria in 1981 requested the British
             Government to make available to Nigeria, some united Kingdom Police
-            officers to assess the training needs of the Nigerian Police.
+            officers to assess the training needs of The Nigeria Police.
           </p>
           <Button
             asChild

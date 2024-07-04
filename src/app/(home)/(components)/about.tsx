@@ -102,7 +102,7 @@ const Aboutmain = () => {
               The origin of the Nigeria Police Academy dates back to the early
               80s when the Government of Nigeria in 1981 requested the British
               Government to make available to Nigeria, some united Kingdom
-              Police officers to assess the training needs of the Nigerian
+              Police officers to assess the training needs of The Nigeria
               Police.
             </p>
             <p>
@@ -113,8 +113,8 @@ const Aboutmain = () => {
               This report was formally published as the white paper of the
               Federal Republic, of Nigeria, on the future training needs of the
               Nigeria Police Force. A follow up of recommendations of the pacy
-              report led to the search for the best training orientation for the
-              Nigerian Police.
+              report led to the search for the best training orientation for The
+              Nigeria Police.
             </p>
             <p>
               The The Academy officially took off simultaneously in 1988 at two
