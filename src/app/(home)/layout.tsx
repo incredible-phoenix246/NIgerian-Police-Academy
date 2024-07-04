@@ -1,15 +1,16 @@
 import { SideNavigation } from "@/components/navigation/sidebar";
-import { Navbar } from "@/components/navigation";
+import { Navbar, Footer } from "@/components/navigation";
 
-export default function ({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <SideNavigation />
       <Navbar />
       <section className="w-full relative  md:pl-[96px] min-[1140px]:pl-[270px] ">
-        <div className="flex w-full flex-col h-full relative max-container pt-12 md:pt-0 dark:bg-gray-900">
+        <div className="flex w-full flex-col h-full relative max-container">
           {children}
         </div>
+        <Footer />
       </section>
     </>
   );
