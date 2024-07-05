@@ -82,10 +82,10 @@ const AboutSection = () => {
         className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full"
       >
         <Slider {...settings}>
-          {HeroImage.map((hm) => (
+          {com.map((hm) => (
             <Image
               key={hm.id}
-              src={`/commandant_${hm.id}.jpg`}
+              src={hm.image ? hm.image : `/commandant_${hm.id}.jpg`}
               width={323}
               height={438}
               alt="Illustration Image"
@@ -241,29 +241,33 @@ interface image {
 export const HeroImage: image[] = [
   {
     id: 1,
-    image: "/hero/hero2.webp",
+    image: "",
   },
   {
     id: 2,
-    image: "/hero/hero3.webp",
+    image: "",
   },
   {
     id: 3,
-    image: "/hero/hero3.webp",
+    image: "",
   },
 ];
 
-// <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-//   <Slider {...settings}>
-//     {HeroImage.map((hm) => (
-//       <Image
-//         key={hm.id}
-//         src={`/commandant_${hm.id}.jpg`}
-//         width={323}
-//         height={438}
-//         alt="Illustration Image"
-//         className="grow w-full max-h-[450px] max-w-[450px] rounded-2xl max-md:mt-10 max-md:max-w-full object-cover"
-//       />
-//     ))}
-//   </Slider>
-// </div>;
+export const com: image[] = [
+  {
+    id: 1,
+    image: "",
+  },
+  {
+    id: 2,
+    image: "",
+  },
+  {
+    id: 3,
+    image: "",
+  },
+  {
+    id: 4,
+    image: "/hero1.jpg",
+  },
+];
