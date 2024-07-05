@@ -21,12 +21,12 @@ const SideNavigation = () => {
     <section className="bg-blue-main  z-[50] w-[0px] md:w-[96px] min-[1140px]:w-[270px] hover:w-[270px] transition-all duration-300 py-4  hidden md:flex flex-col gap-y-4 items-center justify-between min-[1140px]:items-start fixed h-screen left-0 top-0 overflow-y-auto border-r border-blue-main  sidebar-scroll overflow-x-hidden group select-none">
       <Link
         href="/"
-        className=" max-[1140px]:w-full group-hover:w-full h-[53px]"
+        className=" max-[1140px]:w-full group-hover:w-full h-[53px] items-center justify-center"
       >
         <Image src="/logo2.webp" alt="Logo" width={155} height={53} />
-        {/* <span className="text-base font-medium text-white text-center">
+        <span className="text-base font-medium text-white text-center">
           CPSP
-        </span> */}
+        </span>
       </Link>
       <ul className="flex flex-col gap-y-4 pt-8 w-full justify-end items-end min-[1140px]:p-4  hover:p-4 ">
         {NAV_LINKS.map((link) => (
