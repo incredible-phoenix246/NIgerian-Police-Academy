@@ -196,7 +196,7 @@ const NewsSection = () => {
       imageSrc: "exam.jpeg",
       author: "Ict directorates",
       date: "Feb 23, 2024",
-      title: "Launch Of the department of cybersecurity",
+      title: "Launch Of The Center for Policing and Policy",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam commodi doloremque error, autem odit recusandae voluptatibus accusantium sit sint fugiat ducimus, non omnis corrupti iste dolor id quam, aperiam consectetur quo maiores quis perspiciatis voluptate et quaerat. Molestiae, recusandae! Atque culpa quidem repellat voluptatum illo corporis ad a, suscipit consequatur aperiam deserunt perspiciatis inventore iste sed. In perferendis nemo officiis alias. Quam distinctio laboriosam nobis cupiditate ullam doloremque, voluptatem alias placeat mollitia voluptates voluptas et iste sed sapiente ab ipsa dolorem? At assumenda sed repellendus numquam sint quo pariatur, enim non qui sit dignissimos temporibus consectetur soluta, fugit distinctio hic magni laborum! Atque et totam natus iste deleniti eligendi ab sed accusamus modi placeat distinctio reiciendis, beatae eum, repellendus eveniet harum, nam similique perferendis labore minima porro voluptatum! Ratione asperiores pariatur praesentium incidunt facilis quod fugit. Recusandae suscipit assumenda eligendi. Nam vero maiores a ipsa, voluptate nostrum modi magni cupiditate!",
     },
