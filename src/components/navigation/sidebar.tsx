@@ -22,7 +22,7 @@ const SideNavigation = () => {
       <Link href="/" className="w-full h-[53px] items-center justify-center">
         <Image src="/logo2.webp" alt="Logo" width={155} height={53} />
         <span className="text-base font-medium text-white text-center">
-          CSPPP
+          CPPP
         </span>
       </Link>
       <ul className="flex flex-col gap-y-4 pt-8 w-full justify-end items-end min-[1140px]:p-4  hover:p-4 ">
