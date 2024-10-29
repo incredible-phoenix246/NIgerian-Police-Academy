@@ -40,7 +40,7 @@ const SideNavigation = () => {
             tabIndex={0}
             aria-label={link.label}
             className={cn(
-              "flex items-end text-end gap-x-3 py-2 px-3 h-[52px] text-white font-medium text-[24px] leading-[24px]  transition-colors duration-300 cursor-pointer",
+              "flex items-end text-end capitalize gap-x-3 py-2 px-3 h-[52px] text-white font-medium text-[24px] leading-[24px]  transition-colors duration-300 cursor-pointer",
               isActive === link.link
                 ? "bg-white  text-blue-main rounded outline-none"
                 : "hover:bg-black/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-main/50"

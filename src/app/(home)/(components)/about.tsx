@@ -55,15 +55,15 @@ const About = () => {
             />
           </h2>
           <p className="w-full sm:max-w-[80%] text-center sm:font-medium text-white/80 text-sm sm:text-lg">
-            A model security training institution, internationally respected for
+            {/* A model security training institution, internationally respected for
             its quality and efficiency, is known for rigorous academic standards
             and commitment to excellence. Graduates are well-equipped with the
-            latest security skills, prepared to tackle challenging issues.
-            {/*Faculty, comprising industry leaders, bring real-world insights,*/}
+            latest security skills, prepared to tackle challenging issues. */}
+            {/* Faculty, comprising industry leaders, bring real-world insights,*/}
             {/*fostering innovation and critical thinking.*/}
             {/*  This blend of education*/}
             {/*and training has earned the institution a stellar international*/}
-            {/*reputation.*/}
+            {/*reputation. */}
           </p>
           <div className="mt-3 lg:mt-6 w-full justify-center flex gap-x-5 lg:gap-x-10 ">
             <Button

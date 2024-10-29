@@ -3,12 +3,12 @@ import { Category, type Icon } from "iconsax-react";
 
 const NAV_LINKS: NavbarLinkProps[] = [
   { id: 2, link: "about", label: "About" },
-  { id: 3, link: "administration", label: "Administration" },
+  { id: 3, link: "administraion", label: "administration" },
+  { id: 8, link: "programs", label: "Programs" },
   { id: 4, link: "academic", label: "Academic" },
   { id: 5, link: "research", label: "Research" },
   { id: 6, link: "announcements", label: "Announcements" },
   { id: 7, link: "activities", label: "Activities" },
-  { id: 8, link: "programs", label: "Programs" },
   { id: 10, link: "gallery", label: "gallery" },
 ];
 
