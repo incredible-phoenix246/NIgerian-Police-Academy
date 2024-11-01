@@ -75,6 +75,7 @@ const CustomSidebar = () => {
 
           <nav className="flex-grow mt-8 gap-3">
             <NavItem href="/about" text="About" />
+            <NavItem href="/management" text="Management" />
             <div className="px-4 py-2">
               <motion.button
                 className="flex items-center justify-between w-full text-gray-300 hover:text-white transition-colors duration-200"
@@ -115,12 +116,12 @@ const CustomSidebar = () => {
                 )}
               </AnimatePresence>
             </div>
-            <NavItem href="/management" text="Management" />
             <NavItem href="/programs" text="Programs" />
             <NavItem href="/academics" text="Academics" />
             <NavItem href="/" text="Research" />
-            <NavItem href="/journals" text="Journal" />
+            <NavItem href="/journals" text="Journals" />
             <NavItem href="/activities" text="Activities" />
+            <NavItem href="/gallery" text="Gallery" />
           </nav>
 
           {/* Footer */}

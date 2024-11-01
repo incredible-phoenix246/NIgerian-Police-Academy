@@ -8,7 +8,7 @@ import Link from "next/link";
 const journalsData = [
   {
     id: 1,
-    title: "Advancements in Tropical Disease Management",
+    title: "Police Academy Journal of Police and Policing (PAJPP)",
     authors: "Dr. James Erhurh, et al.",
     date: "2023-05-15",
     abstract:

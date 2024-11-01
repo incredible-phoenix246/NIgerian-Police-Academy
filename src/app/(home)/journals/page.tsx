@@ -8,7 +8,7 @@ import { Search, BookOpen, Calendar, User } from "lucide-react";
 const journalsData = [
   {
     id: 1,
-    title: "Advancements in Tropical Disease Management",
+    title: "Police Academy Journal of Police and Policing (PAJPP)",
     authors: "Dr. James Erhurh, et al.",
     date: "2023-05-15",
     abstract:
@@ -17,7 +17,7 @@ const journalsData = [
   },
   {
     id: 2,
-    title: "AI-Driven Diagnostics in Rural Healthcare",
+    title: "Journal 2",
     authors: "Dr. Philip N., Nasfisa Muhd",
     date: "2023-07-22",
     abstract:
@@ -26,7 +26,7 @@ const journalsData = [
   },
   {
     id: 3,
-    title: "Sustainable Financing Models for Healthcare in Developing Nations",
+    title: "Journal 3",
     authors: "Bashir Gambo, Ado Sule",
     date: "2023-09-10",
     abstract:
@@ -35,7 +35,7 @@ const journalsData = [
   },
   {
     id: 4,
-    title: "Telemedicine: Bridging the Healthcare Gap in Remote Areas",
+    title: "Journal 4",
     authors: "Ado Sule, Nasfisa Muhd",
     date: "2023-11-05",
     abstract:
@@ -44,7 +44,7 @@ const journalsData = [
   },
   {
     id: 5,
-    title: "Blockchain Technology in Health Records Management",
+    title: "Journal 5",
     authors: "Nasfisa Muhd, Dr. Philip N.",
     date: "2024-01-18",
     abstract:

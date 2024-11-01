@@ -1,8 +1,8 @@
 export const managementProfiles = {
     "philip-n": {
         name: "Dr. Philip N.",
-        role: "Chief Executive Officer",
-        bio: "Dr. Philip N. is a visionary leader with over 25 years of experience in healthcare management and policy. He has spearheaded numerous initiatives that have revolutionized patient care and operational efficiency in healthcare systems across Africa. His innovative approach to healthcare delivery has earned him several international accolades.",
+        role: "Ag Director",
+        bio: "Dr. Philip N. is a ................",
         image: "/placeholder.svg?height=400&width=400",
         email: "philip.n@csppp.com",
         linkedin: "https://www.linkedin.com/in/philip-n",
@@ -16,8 +16,8 @@ export const managementProfiles = {
     },
     "james-erhurh": {
         name: "Dr. James Erhurh",
-        role: "Chief Medical Officer",
-        bio: "Dr. James Erhurh is a renowned medical practitioner and researcher with a specialization in tropical diseases. With a career spanning two decades, he has been at the forefront of developing innovative treatment protocols for endemic diseases in Africa. His work has significantly improved health outcomes in underserved communities.",
+        role: "Deputy Director",
+        bio: "Dr. James Erhurh is a .............",
         image: "/placeholder.svg?height=400&width=400",
         email: "james.erhurh@csppp.com",
         linkedin: "https://www.linkedin.com/in/james-erhurh",
@@ -31,8 +31,8 @@ export const managementProfiles = {
     },
     "bashir-gambo": {
         name: "Bashir Gambo",
-        role: "Chief Financial Officer",
-        bio: "Bashir Gambo is a seasoned financial expert with a unique blend of experience in both finance and healthcare economics. His strategic financial planning has been instrumental in ensuring CSPPP's fiscal health and sustainable growth. Bashir's innovative funding models have enabled the organization to expand its reach to more underserved communities.",
+        role: "Head of Admin",
+        bio: "Bashir Gambo is a ................",
         image: "/placeholder.svg?height=400&width=400",
         email: "bashir.gambo@csppp.com",
         linkedin: "https://www.linkedin.com/in/bashir-gambo",
@@ -46,8 +46,8 @@ export const managementProfiles = {
     },
     "ado-sule": {
         name: "Ado Sule",
-        role: "Chief Operations Officer",
-        bio: "Ado Sule is a dynamic operations expert known for his ability to streamline complex processes and improve organizational efficiency. His innovative approaches have led to significant improvements in CSPPP's service delivery model, enabling the organization to reach more patients with better quality care.",
+        role: "Adminstrative officer",
+        bio: "Ado Sule is a ................",
         image: "/placeholder.svg?height=400&width=400",
         email: "ado.sule@csppp.com",
         linkedin: "https://www.linkedin.com/in/ado-sule",
@@ -61,8 +61,8 @@ export const managementProfiles = {
     },
     "nadi-muhd": {
         name: "Nasfisa Muhd",
-        role: "Chief Technology Officer",
-        bio: "Nasfisa Muhd is a tech visionary with a passion for leveraging cutting-edge technologies to solve healthcare challenges in Africa. Her expertise in AI, big data, and mobile health technologies has been crucial in positioning CSPPP at the forefront of digital health innovation in the region.",
+        role: "Information & Communication Officer",
+        bio: "Nasfisa Muhd is a ................",
         image: "/placeholder.svg?height=400&width=400",
         email: "nasfisa.muhd@csppp.com",
         linkedin: "https://www.linkedin.com/in/nasfisa-muhd",
